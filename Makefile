@@ -31,6 +31,6 @@ lib_rebuild:
 
 # Remove the rawasm installation (miniasm is deleted as well)
 clean:
-	rm -r $(MINIASM_PATH)
+	yes | rm -r $(MINIASM_PATH)
 
 .PHONY: all patch clean
