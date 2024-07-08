@@ -58,7 +58,7 @@ Using **Rawasm** is straightforward. The following com
 _input_data_ can be either a directory containing multiple files, or a single file (fast5, pod5, slow5, blow5). In case of a directory, do not mix different-type files.
 _overlaps.paf_ is the all vs all overlaps file produced by **[RawHash2](https://github.com/CMU-SAFARI/RawHash)**.
 _outdir_ specifies the unitig files output directory. **Rawasm** creates a unitig file for each distinct unitig that makes the assembly. The format type is the same of the input.
-_assembly.gfa_ assembly text output.
+_assembly.gfa_ is the assembly text output.
 
 # Cite Rawsamble
 If you use Rawasm in your work, please consider citing the following papers:
