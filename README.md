@@ -1,6 +1,6 @@
 # Overview
 **Rawasm** is the first software tool that enables the construction of genome assembly from raw nanopore signals.
-It mostly reuses the **miniasm** (https://github.com/lh3/miniasm) features, but adds support to _FAST5_, _POD5_ and _SLOW5_ formats.
+It mostly reuses the **[miniasm](https://github.com/lh3/miniasm)** features, but adds support to _FAST5_, _POD5_ and _SLOW5_ formats.
 Rawasm can be used in pipelining with **RawHash2** (https://github.com/CMU-SAFARI/RawHash), using **Rawsamble** overlapping feature.
 
 # Installation
