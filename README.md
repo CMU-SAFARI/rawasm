@@ -44,7 +44,7 @@ gcc -c -g -Wall -O2 -Wno-all  -Wno-write-strings -Wno-deprecated-declarations -W
 ```bash
 ar rcs libuuid.a *.o
 ```
-
+All static libraries must be in the _lib_ directory before running the _make_ or _make install_ command.
 # Usage
 
 # Cite Rawsamble
