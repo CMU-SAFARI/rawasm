@@ -27,16 +27,23 @@ make install
 However, recompiling might be required depending on your system. If it is the case, you can choose two options:
 - Refer to **RawHash2** repo for _SLOW5_, _POD5_ and _FAST5_ libraries compilation.
 - Compile the libraries using _gcc ar_ from the original repos:
-  - a
-  - b
-  - c
+  - _libhdf5.a_ : compile from https://github.com/HDFGroup/hdf5
+  - _libpod5_format.a, libarrow.a, libjemalloc_pic.a, libzstd.a_ : compile from https://github.com/nanoporetech/pod5-file-format
+  - _libslow5.a_ : compile from https://github.com/hasindu2008/slow5tools
 
- To build libuuid.a, you can do the following:
-    
-
-
-
-
+Finally, **Rawasm** requires libuuid.a. you can do the following:
+- Download libuuid
+```bash
+git clone https://github.com/cloudbase/libuuid/tree/master libuuid
+```
+- Build .o files (run the following for each .c or just write a Makefile/script to automate)
+```bash
+gcc -c -g -Wall -O2 -Wno-all  -Wno-write-strings -Wno-deprecated-declarations -Wcpp -I. file.c -o file.o
+```
+- Generate the library
+```bash
+ar rcs libuuid.a *.o
+```
 
 # Usage
 
