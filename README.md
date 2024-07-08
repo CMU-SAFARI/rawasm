@@ -8,7 +8,7 @@ Rawasm can be used in pipelining with **[RawHash2](https://github.com/CMU-SAFARI
 To install **Rawasm**, do the following:
 * Clone the repository
   ```bash
-  git clone --recursive https://github.com/CMU-SAFARI/rawasm.git rawasm
+  git clone https://github.com/CMU-SAFARI/rawasm.git rawasm
   ```
 * install Rawasm
   ```bash
