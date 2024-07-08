@@ -51,7 +51,7 @@ All static libraries must be in the _lib_ directory before running the _make_ or
 - Processing of single or multiple _FAST5, POD5, S/BLOW5_ input files
 - Output the assembly as _FAST5, POD5, S/BLOW5_ unitigs files. For more info about unitigs, check **[miniasm](https://github.com/lh3/miniasm)**.
 
-Using **Rawasm** is straightforward. The following com
+Using **Rawasm** is straightforward.
 ```bash
 ./miniasm -f input_data[.fast5/pod5/slow5/blow5] overlaps.paf -H outdir > assembly.gfa
 ```
