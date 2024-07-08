@@ -47,4 +47,22 @@ ar rcs libuuid.a *.o
 All static libraries must be in the _lib_ directory before running the _make_ or _make install_ command.
 # Usage
 
+**Rawasm** supports by default all of **miniasm** features. Moreover, it introduces two new features:
+- Processing of single or multiple _FAST5, POD5, S/BLOW5_ input files
+- Output the assembly as _FAST5, POD5, S/BLOW5_ unitigs files. For more info about unitigs, check **[miniasm](https://github.com/lh3/miniasm)**.
+
+Using **Rawas** is straightforward. The following com
+```bash
+./miniasm -f input_data[.fast5/pod5/slow5/blow5] overlaps.paf -H outdir > assembly.gfa
+```
+_input_data_ can be either a directory containing multiple files, or a single file (fast5, pod5, slow5, blow5). In case of a directory, do not mix different-type files.
+_overlaps.paf_ is the all vs all overlaps file produced by **[RawHash2](https://github.com/CMU-SAFARI/RawHash)**.
+_outdir_ specifies the unitig files output directory. **Rawasm** creates a unitig file for each distinct unitig that makes the assembly. The format type is the same of the input.
+_assembly.gfa_ assembly text output.
+
 # Cite Rawsamble
+If you use Rawasm in your work, please consider citing the following papers:
+
+```bibtex
+TBD
+```
